@@ -12,8 +12,9 @@ function App() {
       )
       .then((res) => {
         setCoins(res.data);
-      });
-  });
+      })
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <div className="App">
       <h1>Crypto api</h1>
