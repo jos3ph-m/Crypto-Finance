@@ -16,8 +16,8 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="App">
-      <h1>Crypto api</h1>
+    <div className="coin-app">
+      <div className="coin-search"></div>
     </div>
   );
 }
