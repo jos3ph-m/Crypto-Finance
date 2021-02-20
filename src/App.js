@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   const [coins, setCoins] = useState([]);
+  const [search, setSearch];
 
   useEffect(() => {
     axios
