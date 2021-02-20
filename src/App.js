@@ -16,6 +16,9 @@ function App() {
       })
       .catch((err) => console.log(err));
   }, []);
+
+  const handleChange = (e) => {};
+
   return (
     <div className="coin-app">
       <div className="coin-search">
