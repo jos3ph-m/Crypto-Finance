@@ -21,6 +21,8 @@ function App() {
     setSearch(e.target.value);
   };
 
+  const filterdCoins = coins.filter((coin) => {});
+
   return (
     <div className="coin-app">
       <div className="coin-search">
