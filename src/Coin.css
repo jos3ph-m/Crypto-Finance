@@ -6,4 +6,5 @@
 .coin-row {
   display: flex;
   flex-direction: row;
+  justify-items: start;
 }
