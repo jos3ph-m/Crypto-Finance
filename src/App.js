@@ -46,6 +46,7 @@ function App() {
             name={coin.name}
             image={coin.image}
             symbol={coin.symbol}
+            volume={coin.market_cap}
           />
         );
       })}
