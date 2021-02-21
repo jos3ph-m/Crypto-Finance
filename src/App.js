@@ -22,9 +22,9 @@ function App() {
     setSearch(e.target.value);
   };
 
-  const filterdCoins = coins.filter((coin) => {
-    coin.name.toLowerCase().includes(search.toLowerCase());
-  });
+  const filteredCoins = coins.filter((coin) =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="coin-app">
@@ -48,6 +48,7 @@ function App() {
             symbol={coin.symbol}
             volume={coin.market_cap}
             price={coin.current_price}
+            priceChange={coin.price_change_percentage_24h}
           />
         );
       })}
