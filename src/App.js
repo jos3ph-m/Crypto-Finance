@@ -40,7 +40,14 @@ function App() {
         </form>
       </div>
       {filteredCoins.map((coin) => {
-        return <Coin key={coin.id} name={coin.name} image={coin.image} />;
+        return (
+          <Coin
+            key={coin.id}
+            name={coin.name}
+            image={coin.image}
+            symbol={coin.symbol}
+          />
+        );
       })}
     </div>
   );
